@@ -2,11 +2,11 @@
 
 ## PCB
 
-![BRD.jpg](images\BRD.jpg)
+![BRD.jpg](images/BRD.jpg)
 
 ## SCH
 
-![SCH.png](images\SCH.png)
+![SCH.png](images/SCH.png)
 
 ## BOM
 
