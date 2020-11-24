@@ -30,6 +30,6 @@ Please see bom/ibom.html
 ## Reference
 
 1. [MCP9600 Evaluation Board - Microchip Technology](https://www.microchip.com/adm00665-063015a)
-2. [Grove - I2C Thermocouple Amplifier (MCP9600)](Grove - I2C Thermocouple Amplifier (MCP9600))
+2. [Grove - I2C Thermocouple Amplifier MCP9600](https://wiki.seeedstudio.com/Grove-I2C_Thermocouple_Amplifier-MCP9600/)
 3. [SparkFun Qwiic Thermocouple Amplifier - MCP9600](https://www.sparkfun.com/products/16294)
 4. [Adafruit MCP9600 I2C Thermocouple Amplifier](https://www.adafruit.com/product/4101)
