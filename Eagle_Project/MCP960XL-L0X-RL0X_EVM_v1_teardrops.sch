@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5249,18 +5249,6 @@ ADDR Pin Tied to 3V3   0x69</text>
 <wire x1="438.15" y1="33.02" x2="444.5" y2="33.02" width="0.1524" layer="91"/>
 <label x="449.58" y="33.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="7"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<wire x1="482.6" y1="10.16" x2="485.14" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="IO7"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<wire x1="482.6" y1="7.62" x2="485.14" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="IO6"/>
 </segment>
 </net>
 <net name="A2" class="0">

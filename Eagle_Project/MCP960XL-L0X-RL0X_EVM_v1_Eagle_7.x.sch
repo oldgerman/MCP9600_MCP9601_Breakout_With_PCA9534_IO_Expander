@@ -3741,13 +3741,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP1" library="SparkFun" deviceset="JUMPER-2" device="SMD-NC"/>
 <part name="SUPPLY13" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U3" library="TS100" deviceset="MCP9601" device=""/>
+<part name="U2" library="TS100" deviceset="MCP9601" device=""/>
 <part name="JP4" library="SparkFun" deviceset="JUMPER-2" device="SMD-NC"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_06X2" device="PTH_FEMALE" value="2X6 FEMALE"/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="L4" library="microbuilder" deviceset="INDUCTOR" device="0603" value="1K/0.5A"/>
-<part name="U4" library="TS100" deviceset="PCA9534" device=""/>
+<part name="U3" library="TS100" deviceset="PCA9534" device=""/>
 <part name="PTC1" library="microbuilder" deviceset="PTC" device="1206" value="0.1A"/>
 <part name="FID1" library="FUSB302" deviceset="FIDUCIAL" device="1X2.5"/>
 <part name="FID2" library="FUSB302" deviceset="FIDUCIAL" device="1X2.5"/>
@@ -3756,6 +3756,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R34" library="microbuilder" deviceset="RESISTOR" device="0603" value="1K"/>
 <part name="LED7" library="microbuilder" deviceset="LED" device="0603"/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="100nF/50V"/>
 </parts>
 <sheets>
 <sheet>
@@ -4236,7 +4239,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <instance part="GND18" gate="1" x="449.58" y="-27.94" smashed="yes">
 <attribute name="VALUE" x="449.58" y="-28.194" size="1.27" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="U3" gate="G$1" x="473.71" y="73.66" smashed="yes">
+<instance part="U2" gate="G$1" x="473.71" y="73.66" smashed="yes">
 <attribute name="NAME" x="458.47" y="91.44" size="1.27" layer="95" font="vector"/>
 <attribute name="VALUE" x="458.47" y="55.88" size="1.27" layer="95" font="vector"/>
 </instance>
@@ -4258,7 +4261,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <attribute name="NAME" x="356.87" y="91.44" size="1.27" layer="95" font="vector"/>
 <attribute name="VALUE" x="356.87" y="87.63" size="1.27" layer="96" font="vector"/>
 </instance>
-<instance part="U4" gate="G$1" x="472.44" y="2.54" smashed="yes">
+<instance part="U3" gate="G$1" x="472.44" y="2.54" smashed="yes">
 <attribute name="NAME" x="464.82" y="16.51" size="1.27" layer="95" font="vector"/>
 <attribute name="VALUE" x="464.82" y="-15.24" size="1.27" layer="96" font="vector"/>
 </instance>
@@ -4280,6 +4283,16 @@ ADDR Pin Tied to 3V3   0x69</text>
 </instance>
 <instance part="GND5" gate="1" x="330.2" y="-1.27" smashed="yes" rot="R90">
 <attribute name="VALUE" x="330.454" y="-1.27" size="1.27" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="455.93" y="21.59" smashed="yes">
+<attribute name="VALUE" x="455.93" y="21.844" size="1.27" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="GND13" gate="1" x="445.77" y="12.7" smashed="yes" rot="R270">
+<attribute name="VALUE" x="445.516" y="12.7" size="1.27" layer="96" font="vector" rot="R270" align="top-center"/>
+</instance>
+<instance part="C11" gate="G$1" x="452.12" y="12.7" smashed="yes" rot="MR90">
+<attribute name="NAME" x="453.39" y="13.97" size="1.27" layer="95" font="vector" rot="MR90"/>
+<attribute name="VALUE" x="450.85" y="13.97" size="1.27" layer="96" font="vector" rot="MR90"/>
 </instance>
 </instances>
 <busses>
@@ -4319,14 +4332,14 @@ ADDR Pin Tied to 3V3   0x69</text>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="496.57" y1="49.53" x2="496.57" y2="53.34" width="0.1524" layer="91"/>
 <junction x="496.57" y="53.34"/>
-<pinref part="U3" gate="G$1" pin="GND@1"/>
-<pinref part="U3" gate="G$1" pin="GND@2"/>
-<pinref part="U3" gate="G$1" pin="GND@3"/>
-<pinref part="U3" gate="G$1" pin="GND@7"/>
-<pinref part="U3" gate="G$1" pin="GND@8"/>
-<pinref part="U3" gate="G$1" pin="GND@9"/>
-<pinref part="U3" gate="G$1" pin="GND@10"/>
-<pinref part="U3" gate="G$1" pin="GND@11"/>
+<pinref part="U2" gate="G$1" pin="GND@1"/>
+<pinref part="U2" gate="G$1" pin="GND@2"/>
+<pinref part="U2" gate="G$1" pin="GND@3"/>
+<pinref part="U2" gate="G$1" pin="GND@7"/>
+<pinref part="U2" gate="G$1" pin="GND@8"/>
+<pinref part="U2" gate="G$1" pin="GND@9"/>
+<pinref part="U2" gate="G$1" pin="GND@10"/>
+<pinref part="U2" gate="G$1" pin="GND@11"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="G$1" pin="3"/>
@@ -4338,7 +4351,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <wire x1="462.28" y1="-10.16" x2="459.74" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="459.74" y1="-10.16" x2="459.74" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="U4" gate="G$1" pin="VSS"/>
+<pinref part="U3" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
@@ -4484,12 +4497,17 @@ ADDR Pin Tied to 3V3   0x69</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="327.66" y1="-1.27" x2="325.12" y2="-1.27" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="450.85" y1="12.7" x2="448.31" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="C11" gate="G$1" pin="P$2"/>
+</segment>
 </net>
 <net name="ADDR" class="0">
 <segment>
 <wire x1="478.79" y1="91.44" x2="478.79" y2="101.6" width="0.1524" layer="91"/>
 <label x="478.79" y="101.6" size="1.27" layer="95" font="vector" ratio="12" rot="R90" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="ADDR"/>
+<pinref part="U2" gate="G$1" pin="ADDR"/>
 </segment>
 <segment>
 <label x="400.685" y="95.25" size="1.27" layer="95" font="vector" ratio="12" rot="R180" xref="yes"/>
@@ -4550,12 +4568,12 @@ ADDR Pin Tied to 3V3   0x69</text>
 <segment>
 <label x="468.63" y="101.6" size="1.27" layer="95" font="vector" ratio="12" rot="R90" xref="yes"/>
 <wire x1="468.63" y1="91.44" x2="468.63" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="SDA"/>
+<pinref part="U2" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
 <label x="459.74" y="5.08" size="1.27" layer="95" font="vector" ratio="12" rot="R180" xref="yes"/>
 <wire x1="462.28" y1="5.08" x2="459.74" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="SDA"/>
+<pinref part="U3" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="SCL_3V3" class="0">
@@ -4572,19 +4590,19 @@ ADDR Pin Tied to 3V3   0x69</text>
 <segment>
 <wire x1="471.17" y1="91.44" x2="471.17" y2="101.6" width="0.1524" layer="91"/>
 <label x="471.17" y="101.6" size="1.27" layer="95" font="vector" ratio="12" rot="R90" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="SCL"/>
+<pinref part="U2" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <wire x1="462.28" y1="7.62" x2="459.74" y2="7.62" width="0.1524" layer="91"/>
 <label x="459.74" y="7.62" size="1.27" layer="95" font="vector" ratio="12" rot="R180" xref="yes"/>
-<pinref part="U4" gate="G$1" pin="SCL"/>
+<pinref part="U3" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="ALERT4" class="0">
 <segment>
 <wire x1="491.49" y1="78.74" x2="500.38" y2="78.74" width="0.1524" layer="91"/>
 <label x="509.27" y="78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="ALERT4"/>
+<pinref part="U2" gate="G$1" pin="ALERT4"/>
 </segment>
 <segment>
 <wire x1="482.6" y1="-7.62" x2="510.54" y2="-7.62" width="0.1524" layer="91"/>
@@ -4593,7 +4611,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <wire x1="510.54" y1="-7.62" x2="513.08" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="510.54" y1="-10.16" x2="510.54" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="510.54" y="-7.62"/>
-<pinref part="U4" gate="G$1" pin="IO0"/>
+<pinref part="U3" gate="G$1" pin="IO0"/>
 </segment>
 <segment>
 <wire x1="327.66" y1="-50.8" x2="325.12" y2="-50.8" width="0.1524" layer="91"/>
@@ -4612,7 +4630,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <segment>
 <wire x1="491.49" y1="76.2" x2="500.38" y2="76.2" width="0.1524" layer="91"/>
 <label x="509.27" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="ALERT3"/>
+<pinref part="U2" gate="G$1" pin="ALERT3"/>
 </segment>
 <segment>
 <wire x1="482.6" y1="-5.08" x2="505.46" y2="-5.08" width="0.1524" layer="91"/>
@@ -4621,7 +4639,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <wire x1="505.46" y1="-5.08" x2="513.08" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="505.46" y1="-10.16" x2="505.46" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="505.46" y="-5.08"/>
-<pinref part="U4" gate="G$1" pin="IO1"/>
+<pinref part="U3" gate="G$1" pin="IO1"/>
 </segment>
 <segment>
 <wire x1="317.5" y1="-50.8" x2="314.96" y2="-50.8" width="0.1524" layer="91"/>
@@ -4640,7 +4658,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <segment>
 <wire x1="491.49" y1="71.12" x2="500.38" y2="71.12" width="0.1524" layer="91"/>
 <label x="509.27" y="71.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="ALERT2"/>
+<pinref part="U2" gate="G$1" pin="ALERT2"/>
 </segment>
 <segment>
 <wire x1="482.6" y1="-2.54" x2="500.38" y2="-2.54" width="0.1524" layer="91"/>
@@ -4649,7 +4667,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <wire x1="500.38" y1="-2.54" x2="513.08" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="500.38" y1="-10.16" x2="500.38" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="500.38" y="-2.54"/>
-<pinref part="U4" gate="G$1" pin="IO2"/>
+<pinref part="U3" gate="G$1" pin="IO2"/>
 </segment>
 <segment>
 <wire x1="307.34" y1="-50.8" x2="304.8" y2="-50.8" width="0.1524" layer="91"/>
@@ -4668,7 +4686,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <segment>
 <wire x1="491.49" y1="68.58" x2="500.38" y2="68.58" width="0.1524" layer="91"/>
 <label x="509.27" y="68.58" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="ALERT1"/>
+<pinref part="U2" gate="G$1" pin="ALERT1"/>
 </segment>
 <segment>
 <wire x1="482.6" y1="0" x2="495.3" y2="0" width="0.1524" layer="91"/>
@@ -4677,7 +4695,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <wire x1="495.3" y1="0" x2="513.08" y2="0" width="0.1524" layer="91"/>
 <wire x1="495.3" y1="-10.16" x2="495.3" y2="0" width="0.1524" layer="91"/>
 <junction x="495.3" y="0"/>
-<pinref part="U4" gate="G$1" pin="IO3"/>
+<pinref part="U3" gate="G$1" pin="IO3"/>
 </segment>
 <segment>
 <wire x1="297.18" y1="-50.8" x2="294.64" y2="-50.8" width="0.1524" layer="91"/>
@@ -4694,7 +4712,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <segment>
 <wire x1="455.93" y1="76.2" x2="448.31" y2="76.2" width="0.1524" layer="91"/>
 <label x="448.31" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="VIN+"/>
+<pinref part="U2" gate="G$1" pin="VIN+"/>
 </segment>
 <segment>
 <wire x1="372.11" y1="41.91" x2="382.27" y2="41.91" width="0.1524" layer="91"/>
@@ -4784,7 +4802,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <pinref part="C10" gate="G$1" pin="P$1"/>
 <wire x1="473.71" y1="29.21" x2="473.71" y2="31.75" width="0.1524" layer="91"/>
 <junction x="473.71" y="31.75"/>
-<pinref part="U3" gate="G$1" pin="VDD"/>
+<pinref part="U2" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
@@ -4884,12 +4902,21 @@ ADDR Pin Tied to 3V3   0x69</text>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
 <wire x1="433.07" y1="100.33" x2="433.07" y2="102.87" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="455.93" y1="12.7" x2="455.93" y2="19.05" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
+<wire x1="453.39" y1="12.7" x2="455.93" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="P$1"/>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+<wire x1="455.93" y1="12.7" x2="462.28" y2="12.7" width="0.1524" layer="91"/>
+<junction x="455.93" y="12.7"/>
+</segment>
 </net>
 <net name="INT_3V3" class="0">
 <segment>
 <wire x1="462.28" y1="2.54" x2="459.74" y2="2.54" width="0.1524" layer="91"/>
 <label x="449.961" y="2.54" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U4" gate="G$1" pin="!INT"/>
+<pinref part="U3" gate="G$1" pin="!INT"/>
 </segment>
 <segment>
 <pinref part="Q3" gate="NMOS" pin="S"/>
@@ -4906,7 +4933,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <segment>
 <wire x1="455.93" y1="71.12" x2="448.31" y2="71.12" width="0.1524" layer="91"/>
 <label x="448.31" y="71.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="VIN-"/>
+<pinref part="U2" gate="G$1" pin="VIN-"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="P$2"/>
@@ -4925,7 +4952,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <wire x1="468.63" y1="55.88" x2="468.63" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="468.63" y1="53.34" x2="450.85" y2="53.34" width="0.1524" layer="91"/>
 <label x="450.85" y="53.34" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="VSENSE"/>
+<pinref part="U2" gate="G$1" pin="VSENSE"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5162,7 +5189,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <segment>
 <wire x1="476.25" y1="55.88" x2="476.25" y2="48.26" width="0.1524" layer="91"/>
 <label x="476.25" y="36.83" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="OC_ALERT"/>
+<pinref part="U2" gate="G$1" pin="OC_ALERT"/>
 </segment>
 <segment>
 <wire x1="482.6" y1="2.54" x2="490.22" y2="2.54" width="0.1524" layer="91"/>
@@ -5171,7 +5198,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <wire x1="490.22" y1="2.54" x2="513.08" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="490.22" y1="-10.16" x2="490.22" y2="2.54" width="0.1524" layer="91"/>
 <junction x="490.22" y="2.54"/>
-<pinref part="U4" gate="G$1" pin="IO4"/>
+<pinref part="U3" gate="G$1" pin="IO4"/>
 </segment>
 <segment>
 <label x="420.37" y="38.1" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -5190,7 +5217,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <segment>
 <wire x1="471.17" y1="55.88" x2="471.17" y2="48.26" width="0.1524" layer="91"/>
 <label x="471.17" y="36.83" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="SC_ALERT"/>
+<pinref part="U2" gate="G$1" pin="SC_ALERT"/>
 </segment>
 <segment>
 <wire x1="482.6" y1="5.08" x2="485.14" y2="5.08" width="0.1524" layer="91"/>
@@ -5199,7 +5226,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <wire x1="485.14" y1="5.08" x2="513.08" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="485.14" y1="-10.16" x2="485.14" y2="5.08" width="0.1524" layer="91"/>
 <junction x="485.14" y="5.08"/>
-<pinref part="U4" gate="G$1" pin="IO5"/>
+<pinref part="U3" gate="G$1" pin="IO5"/>
 </segment>
 <segment>
 <label x="420.37" y="35.56" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -5226,13 +5253,13 @@ ADDR Pin Tied to 3V3   0x69</text>
 <net name="N$20" class="0">
 <segment>
 <wire x1="482.6" y1="10.16" x2="485.14" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="IO7"/>
+<pinref part="U3" gate="G$1" pin="IO7"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <wire x1="482.6" y1="7.62" x2="485.14" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="IO6"/>
+<pinref part="U3" gate="G$1" pin="IO6"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -5244,7 +5271,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <wire x1="454.66" y1="-2.54" x2="462.28" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="454.66" y1="-10.16" x2="454.66" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="454.66" y="-2.54"/>
-<pinref part="U4" gate="G$1" pin="A2"/>
+<pinref part="U3" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -5256,7 +5283,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <pinref part="R32" gate="G$1" pin="2"/>
 <wire x1="449.58" y1="-10.16" x2="449.58" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="449.58" y="-5.08"/>
-<pinref part="U4" gate="G$1" pin="A1"/>
+<pinref part="U3" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -5268,7 +5295,7 @@ ADDR Pin Tied to 3V3   0x69</text>
 <pinref part="R31" gate="G$1" pin="2"/>
 <wire x1="444.5" y1="-10.16" x2="444.5" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="444.5" y="-7.62"/>
-<pinref part="U4" gate="G$1" pin="A0"/>
+<pinref part="U3" gate="G$1" pin="A0"/>
 </segment>
 </net>
 <net name="N$25" class="0">
