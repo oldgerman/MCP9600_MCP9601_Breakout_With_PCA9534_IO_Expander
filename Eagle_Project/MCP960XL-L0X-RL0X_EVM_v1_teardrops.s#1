@@ -4755,9 +4755,11 @@ ADDR Pin Tied to 3V3   0x67</text>
 <pinref part="U3" gate="G$1" pin="IO3"/>
 </segment>
 <segment>
-<label x="292.1" y="-53.34" size="1.27" layer="95" font="vector" ratio="12" rot="R180" xref="yes"/>
+<label x="290.83" y="-50.8" size="1.27" layer="95" font="vector" ratio="12" rot="R180" xref="yes"/>
 <pinref part="Q10" gate="NMOS" pin="G"/>
-<wire x1="294.64" y1="-53.34" x2="292.1" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="293.37" y1="-50.8" x2="290.83" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="-53.34" x2="293.37" y2="-52.07" width="0.1524" layer="91"/>
+<wire x1="293.37" y1="-52.07" x2="293.37" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="420.37" y="33.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
